@@ -1,0 +1,52 @@
+//Layouts JIJIJIJA
+
+@import "./layouts/about";
+@import "./layouts/app";
+@import "./layouts/client";
+@import "./layouts/contact";
+@import "./layouts/dish";
+@import "./layouts/footer";
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/hot";
+@import "./layouts/slider";
+@import "./layouts/subscribe";
+
+//Helpers
+@import "./helpers/mixins";
+@import "./helpers/placeholder";
+@import "./helpers/variables";
+
+//componentes 
+@import "./components/buttons";
+@import "./components/navigation";
+@import "./components/typografhy";
+
+@mixin layout-margin($margin: 90px 0) {
+    margin: $margin;
+  }
+  
+  @mixin layout-padding($padding: 90px 0) {
+    padding: $padding;
+  }
+  
+  @mixin layout-padding2($padding: 45px 0) {
+    padding: $padding;
+  }
+  
+  @mixin layout-padding2-top($padding-top: 45px) {
+    padding-top: $padding-top;
+  }
+  
+  @mixin layout-padding2-bottom($padding-bottom: 45px) {
+    padding-bottom: $padding-bottom;
+  }
+  
+  @mixin layout-padding-top($padding-top: 90px) {
+    padding-top: $padding-top;
+  }
+  
+  @mixin layout-padding-bottom($padding-bottom: 90px) {
+    padding-bottom: $padding-bottom;
+  }
+  
