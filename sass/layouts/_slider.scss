@@ -1,10 +1,10 @@
+@import '../helpers/extend';
+
 .slider_section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  @extend %center-align;
   height: calc(100% - 80px);
   padding: 45px 0 90px;
 

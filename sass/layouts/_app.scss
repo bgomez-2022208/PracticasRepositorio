@@ -1,3 +1,5 @@
+@import '../helpers/extend';
+
 .app_section {
   background-image: url(../images/app-bg.jpg);
   background-size: 100% 86%;
@@ -6,15 +8,11 @@
   background-position: bottom;
 
   .row {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    @extend %center-align;
   }
 
   .img-box {
-    img {
-      width: 100%;
-    }
+    @extend %img-full-width;
   }
 
   .detail-box {

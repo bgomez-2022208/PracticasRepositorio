@@ -1,50 +1,45 @@
+@import '../helpers/variables';
+
 .client_section {
   .heading_container {
+    @include center-flex;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
 
   .box {
-    width: 75%;
-    margin: 90px auto;
+    width: $width-box;
+    margin: $margin-heading-container;
 
     .client_id {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-
+      @include center-flex;
       h4 {
         margin: 0;
-        margin-left: 15px;
+        margin-left: $margin-client-id;
       }
     }
 
     .detail-box {
-      margin-top: 30px;
+      margin-top: $margin-detail-box;
     }
   }
 
   .carousel-indicators {
     margin: 0;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    @include center-flex;
     bottom: -15px;
 
     li {
       margin: 0 3px;
-      width: 20px;
-      height: 20px;
+      width: $width-carousel-indicator;
+      height: $height-carousel-indicator;
       opacity: 1;
-      background-color: #51b5ef;
-      border-radius: 100%;
+      background-color: $color-primary;
+      border-radius: $border-radius-circle;
 
       &.active {
-        background-color: #252525;
+        background-color: $color-secondary;
       }
     }
   }

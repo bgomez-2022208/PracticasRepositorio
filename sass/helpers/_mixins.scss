@@ -1,10 +1,27 @@
-@mixin layout-margin($margin: 90px 0) {
-  margin: $margin;
+@import '../helpers/variables';
+
+@mixin center-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
+@mixin button-style($bg-color, $border-color, $text-color) {
+  display: inline-block;
+  padding: 8px 35px;
+  background-color: $bg-color;
+  color: $text-color;
+  border: 1px solid $border-color;
+  margin-top: 30px;
 
-@mixin layout-padding($padding: 90px 0, $padding-top: null, $padding-bottom: null) {
-  padding: $padding;
-  padding-top: $padding-top;
-  padding-bottom: $padding-bottom;
+  &:hover {
+    background-color: transparent;
+    color: $border-color;
+  }
 }

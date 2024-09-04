@@ -1,39 +1,40 @@
+@import '../helpers/funciones';
+
 .subscribe_section {
-    background-color: #2e2d2d;
-    padding: 25px 0;
-  
-    form {
-      label {
-        font-size: 24px;
-        font-weight: bold;
+  background-color: #2e2d2d;
+  padding: 25px 0;
+
+  form {
+    label {
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin: 0;
+    }
+
+    .box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+
+      input {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        border-bottom: calculate-border(1); // Llamada a la función
+        outline: none;
+        color: #ffffff;
+      }
+
+      button {
+        background-color: transparent;
+        border: none;
+        outline: none;
         text-transform: uppercase;
         color: #ffffff;
-        margin: 0;
-      }
-  
-      .box {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-  
-        input {
-          width: 100%;
-          border: none;
-          background-color: transparent;
-          border-bottom: 1px solid #ffffff;
-          outline: none;
-          color: #ffffff;
-        }
-  
-        button {
-          background-color: transparent;
-          border: none;
-          outline: none;
-          text-transform: uppercase;
-          color: #ffffff;
-          margin-left: -95px;
-        }
+        margin-left: -95px;
       }
     }
   }
-  
+}

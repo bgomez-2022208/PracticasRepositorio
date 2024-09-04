@@ -1,8 +1,7 @@
+@import '../helpers/mixins';
 .about_section {
   .row {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    @include center-flex;
   }
 
   .detail-box {
@@ -12,18 +11,12 @@
       margin-top: 20px;
     }
 
-    a {
-      display: inline-block;
-      padding: 8px 35px;
-      background-color: #262626;
-      color: #ffffff;
-      border: 1px solid #262626;
-      margin-top: 30px;
+    a.btn-1 {
+      @include button-style(#262626, #262626, #ffffff);
+    }
 
-      &:hover {
-        background-color: transparent;
-        color: #262626;
-      }
+    a.btn-2 {
+      @include button-style(#262626, #262626, #ffffff);
     }
   }
 

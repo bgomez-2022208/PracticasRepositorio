@@ -1,0 +1,4 @@
+@function calculate-border($multiplier) {
+    @return $multiplier * 2px;
+  }
+  
